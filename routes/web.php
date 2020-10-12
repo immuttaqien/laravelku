@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/enkripsi', 'EncryptController@enkripsi');
+Route::get('/data', 'EncryptController@data');
+Route::get('/data/{data_rahasia}', 'EncryptController@data_proses');
