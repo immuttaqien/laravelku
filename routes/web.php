@@ -28,3 +28,7 @@ Route::get('/hash/check', 'EncryptController@hash_check');
 Route::get('/upload', 'UploadController@upload');
 Route::post('/upload/proses', 'UploadController@proses_upload');
 Route::get('/upload/hapus/{id}', 'UploadController@hapus');
+
+Route::get('/session/tampil', 'SessionController@tampilSession');
+Route::get('/session/buat', 'SessionController@buatSession');
+Route::get('/session/hapus', 'SessionController@hapusSession');
