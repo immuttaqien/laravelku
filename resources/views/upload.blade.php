@@ -60,7 +60,7 @@
 <tr>
 <td><img width="150px" src="{{ url('/data_file/'.$g->file) }}"></td>
 <td>{{$g->keterangan}}</td>
-<td><a class="btn btn-danger" href="/upload/hapus/{{ $g->id }}">HAPUS</a></td>
+<td><a onclick="return confirm('Apakah Anda yakin akan menghapus data ini ?')" class="btn btn-danger" href="/upload/hapus/{{ $g->id }}">HAPUS</a></td>
 </tr>
 @endforeach
 </tbody>

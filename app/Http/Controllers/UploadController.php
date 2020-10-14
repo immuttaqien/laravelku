@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Gambar;
+use File;
 
 class UploadController extends Controller
 {
@@ -35,6 +36,16 @@ class UploadController extends Controller
             'keterangan' => $request->keterangan,
         ]);
             
+        return redirect()->back();
+    }
+
+    public function hapus($id)
+    {
+        $gambar = Gambar::where('id', $id)->first();
+        File::delete('data_file/'.$gambar->file);
+
+        Gambar::where('id', $id)->delete();
+
         return redirect()->back();
     }
 }
