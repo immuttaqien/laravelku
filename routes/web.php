@@ -24,3 +24,6 @@ Route::get('/data', 'EncryptController@data');
 Route::get('/data/{data_rahasia}', 'EncryptController@data_proses');
 Route::get('/hash', 'EncryptController@hash');
 Route::get('/hash/check', 'EncryptController@hash_check');
+
+Route::get('/upload', 'UploadController@upload');
+Route::post('/upload/proses', 'UploadController@proses_upload');
