@@ -32,3 +32,8 @@ Route::get('/upload/hapus/{id}', 'UploadController@hapus');
 Route::get('/session/tampil', 'SessionController@tampilSession');
 Route::get('/session/buat', 'SessionController@buatSession');
 Route::get('/session/hapus', 'SessionController@hapusSession');
+
+Route::get('/pesan', 'NotifController@index');
+Route::get('/pesan/sukses', 'NotifController@sukses');
+Route::get('/pesan/peringatan', 'NotifController@peringatan');
+Route::get('/pesan/gagal', 'NotifController@gagal');
