@@ -43,3 +43,6 @@ Route::get('/error/{nama}','ErrorController@index');
 Route::get('/kirimemail','EmailController@index');
 
 Auth::routes(['verify' => true]);
+
+Route::get('/pegawai', 'PegawaiController@index');
+Route::get('/pegawai/cetak_pdf', 'PegawaiController@cetak_pdf');
