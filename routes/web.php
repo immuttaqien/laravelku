@@ -41,3 +41,5 @@ Route::get('/pesan/gagal', 'NotifController@gagal');
 Route::get('/error/{nama}','ErrorController@index');
 
 Route::get('/kirimemail','EmailController@index');
+
+Auth::routes(['verify' => true]);
