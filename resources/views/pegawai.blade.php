@@ -13,6 +13,7 @@
 </center>
 <br/>
 <a href="/pegawai/cetak_pdf" class="btn btn-primary" target="_blank">CETAK PDF</a>
+<a href="/pegawai/export_excel" class="btn btn-success my-3" target="_blank">EXPORT EXCEL</a>
 <table class='table table-bordered'>
 <thead>
 <tr>
