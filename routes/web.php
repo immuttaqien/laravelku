@@ -48,3 +48,12 @@ Route::get('/pegawai', 'PegawaiController@index');
 Route::get('/pegawai/cetak_pdf', 'PegawaiController@cetak_pdf');
 Route::get('/pegawai/export_excel', 'PegawaiController@export_excel');
 Route::post('/pegawai/import_excel', 'PegawaiController@import_excel');
+
+Route::get('/form', function(){
+    return view('biodata');
+});
+
+Route::get('/{locale}/form', function ($locale) {
+    App::setLocale($locale);
+    return view('biodata');
+});
