@@ -57,3 +57,6 @@ Route::get('/{locale}/form', function ($locale) {
     App::setLocale($locale);
     return view('biodata');
 });
+
+Route::get('halo/{nama}', 'HaloController@halo');
+Route::get('halo', 'HaloController@panggil');
